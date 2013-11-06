@@ -16,7 +16,8 @@ lein repl
 [http://docs.prediction.io/current/installation/index.html](http://docs.prediction.io/current/installation/index.html)
 
 #### Add your App to PredictionIO
-Go to the web admin panel of PredictionIO Server at http://<yourhost>:9000/. Follow on-screen instruction to add the first app. Now an app key can be obtained from the control panel. You need this key for clojure test.
+Go to the web admin panel of PredictionIO Server at http://<yourhost>:9000/. Follow on-screen instruction to add the first app. Now an app key can be obtained from the control panel.
+Put the app-key into src/predictionio-sample/utils.clj#line4
 
 #### Create a Prediction Engine
 Next, you need to create a Prediction Engine under the new app. Each engine deals with one specific prediction problem. Let's start by creating an Item Recommendation Engine (itemrec) and name it engine1.
